@@ -17,4 +17,7 @@ sealed abstract class Player permits TerminalPlayer {
 	abstract short getBet();
 
 	abstract Action getAction(final ArrayList<TableCard> firstHand, final HashSet<Action> actions);
+
+	void end(final int pay) {
+	}
 }
